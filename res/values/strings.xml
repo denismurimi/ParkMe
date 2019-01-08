@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ParkMe</string>
+    <string name="title_activity_period_2">Period_2</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="spinner_values">
+        <item> 5.00 A.M</item>
+        <item> 6.00 A.M</item>
+        <item> 7.00 A.M</item>
+        <item> 8.00 A.M</item>
+        <item> 9.00 A.M</item>
+        <item> 10.00 A.M</item>
+        <item> 11.00 A.M</item>
+        <item>12.00 Noon</item>
+        <item>1.00 P.M</item>
+        <item> 2.00 P.M</item>
+        <item> 3.00 P.M</item>
+        <item> 4.00 P.M</item>
+        <item> 5.00 P.M</item>
+        <item> 6.00 P.M</item>
+        <item> 7.00 P.M</item>
+        <item> 8.00 P.M</item>
+        <item> 9.00 P.M</item>
+        <item> 10.00 P.M</item>
+    </string-array>
+
+    <string name="title_activity_slots_1">Slots_1</string>
+    <string name="title_activity_street">Street</string>
+    <string name="title_activity_slots_2">Slots_2</string>
+
+</resources>

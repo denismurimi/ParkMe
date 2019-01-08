@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.parkme"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="21" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".Login"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".PhoneRecovery"
+            android:label="Phone Recovery"
+            android:parentActivityName=".Login" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.parkme.Login" />
+        </activity>
+        <activity
+            android:name=".EmailRecovery"
+            android:label="Email Recovery"
+            android:parentActivityName=".PhoneRecovery" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.parkme.PhoneRecovery" />
+        </activity>
+        <activity
+            android:name=".VehicleType"
+            android:label="Vehicle Type"
+            android:parentActivityName=".Login" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.parkme.Login" />
+        </activity>
+        <activity
+            android:name=".Register"
+            android:label="Register"
+            android:parentActivityName=".Login" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.parkme.Login" />
+        </activity>
+        <activity
+            android:name=".Period"
+            android:label="Period"
+            android:parentActivityName=".Street" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.parkme.Street" />
+        </activity>
+        <activity
+            android:name=".VehicleDetails"
+            android:label="Vehicle Details"
+            android:parentActivityName=".Period" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.parkme.Period" />
+        </activity>
+        <activity
+            android:name=".Period_2"
+            android:label="@string/title_activity_period_2"
+            android:parentActivityName=".Period" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.parkme.Period" />
+        </activity>
+        <activity
+            android:name=".Slots_1"
+            android:label="@string/title_activity_slots_1"
+            android:parentActivityName=".Period" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.parkme.Period" />
+        </activity>
+        <activity
+            android:name=".Street"
+            android:label="@string/title_activity_street"
+            android:parentActivityName=".Period_2" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.parkme.Period_2" />
+        </activity>
+        <activity
+            android:name=".Slots_2"
+            android:label="@string/title_activity_slots_2"
+            android:parentActivityName=".Street" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.parkme.Street" />
+        </activity>
+    </application>
+
+</manifest>
